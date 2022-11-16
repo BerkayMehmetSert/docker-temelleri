@@ -457,14 +457,14 @@ $ docker volume prune
 Dockerfile'ın içerisinde Docker Volume kullanmak için aşağıdaki komutları kullanabiliriz.
 
 ```shell
-FROM ubuntu                 // Ubuntu işletim sistemi ile imaj oluşturulur.
-RUN apt-get update          // Ubuntu işletim sistemi güncellenir.
-RUN app-get upgrade         // Ubuntu işletim sistemi güncellenir.
-RUN app-get install nano    // Nano paketi kurulur.
-RUN mkdir /data                 // /data dizini oluşturulur.
-WORKDIR /data                   // /data dizini çalışma dizini olarak ayarlanır.
+FROM ubuntu                           // Ubuntu işletim sistemi ile imaj oluşturulur.
+RUN apt-get update                    // Ubuntu işletim sistemi güncellenir.
+RUN app-get upgrade                   // Ubuntu işletim sistemi güncellenir.
+RUN app-get install nano              // Nano paketi kurulur.
+RUN mkdir /data                       // /data dizini oluşturulur.
+WORKDIR /data                         // /data dizini çalışma dizini olarak ayarlanır.
 RUN echo "Hello World" > hello.txt    // hello.txt dosyasına "Hello World" yazılır.
-VOLUME /data                       // /data dizini Docker Volume olarak ayarlanır.
+VOLUME /data                          // /data dizini Docker Volume olarak ayarlanır.
 ```
 
 ## Docker Ağları
